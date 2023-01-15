@@ -13,7 +13,7 @@ public class RestAssuredJiraTest {
 		SessionFilter session = new SessionFilter();
 		
 		String response = given().header("Content-Type", "application/json")
-		.body("{ \"username\": \"tapanhpandya\", \"password\": \"Tapan@311\" }")
+		.body("{ \"username\": \"tapanhpandya\", \"password\": \"Tapan\" }")
 		.log().all()
 		.filter(session)
 		.when().post("/rest/auth/1/session")
